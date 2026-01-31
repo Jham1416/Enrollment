@@ -31,14 +31,14 @@ public class editStudents extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jButton6 = new javax.swing.JButton();
+        Admin_Return_Home = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        Add_Edit_Students = new javax.swing.JButton();
+        Delete_Edit_Students = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
@@ -70,15 +70,15 @@ public class editStudents extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(102, 102, 102));
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/resizedpng.png"))); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/5779eff1-fd7f-4c35-aad4-8142b9746b44_removalai_preview.png"))); // NOI18N
 
         jLabel3.setFont(new java.awt.Font("Old English Text MT", 1, 20)); // NOI18N
         jLabel3.setText("The Robington Academy");
 
-        jButton6.setBackground(new java.awt.Color(102, 102, 102));
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/icons8-menu-30.png"))); // NOI18N
-        jButton6.setBorder(null);
-        jButton6.addActionListener(this::jButton6ActionPerformed);
+        Admin_Return_Home.setBackground(new java.awt.Color(102, 102, 102));
+        Admin_Return_Home.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/icons8-menu-30.png"))); // NOI18N
+        Admin_Return_Home.setBorder(null);
+        Admin_Return_Home.addActionListener(this::Admin_Return_HomeActionPerformed);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -89,7 +89,7 @@ public class editStudents extends javax.swing.JFrame {
                 .addGap(28, 28, 28)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Admin_Return_Home, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(16, 16, 16))
         );
         jPanel2Layout.setVerticalGroup(
@@ -101,7 +101,7 @@ public class editStudents extends javax.swing.JFrame {
                 .addGap(14, 14, 14)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Admin_Return_Home, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -127,13 +127,13 @@ public class editStudents extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
         jLabel4.setText("Section");
 
-        jButton1.setBackground(new java.awt.Color(255, 204, 0));
-        jButton1.setText("Add");
-        jButton1.addActionListener(this::jButton1ActionPerformed);
+        Add_Edit_Students.setBackground(new java.awt.Color(255, 204, 0));
+        Add_Edit_Students.setText("Add");
+        Add_Edit_Students.addActionListener(this::Add_Edit_StudentsActionPerformed);
 
-        jButton2.setBackground(new java.awt.Color(255, 153, 153));
-        jButton2.setText("Delete");
-        jButton2.addActionListener(this::jButton2ActionPerformed);
+        Delete_Edit_Students.setBackground(new java.awt.Color(255, 153, 153));
+        Delete_Edit_Students.setText("Delete");
+        Delete_Edit_Students.addActionListener(this::Delete_Edit_StudentsActionPerformed);
 
         jLabel5.setText("jLabel5");
 
@@ -192,9 +192,9 @@ public class editStudents extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton2)
+                        .addComponent(Delete_Edit_Students)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton1))
+                        .addComponent(Add_Edit_Students))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                         .addGap(84, 84, 84)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -252,8 +252,8 @@ public class editStudents extends javax.swing.JFrame {
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(53, 53, 53)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
+                    .addComponent(Add_Edit_Students)
+                    .addComponent(Delete_Edit_Students))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -313,17 +313,17 @@ public class editStudents extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void Admin_Return_HomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Admin_Return_HomeActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_Admin_Return_HomeActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void Add_Edit_StudentsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Add_Edit_StudentsActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_Add_Edit_StudentsActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void Delete_Edit_StudentsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Delete_Edit_StudentsActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_Delete_Edit_StudentsActionPerformed
 
     /**
      * @param args the command line arguments
@@ -351,9 +351,9 @@ public class editStudents extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton6;
+    private javax.swing.JButton Add_Edit_Students;
+    private javax.swing.JButton Admin_Return_Home;
+    private javax.swing.JButton Delete_Edit_Students;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

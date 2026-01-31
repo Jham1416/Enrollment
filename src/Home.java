@@ -29,15 +29,15 @@ public class Home extends javax.swing.JFrame {
 
         jPanel3 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
+        Enrollment_Home = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jButton8 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
+        User_LogOut = new javax.swing.JButton();
+        StudentInfo_Home = new javax.swing.JButton();
+        Payment_Home = new javax.swing.JButton();
+        Application_Home = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -58,22 +58,22 @@ public class Home extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton3.setBackground(new java.awt.Color(255, 204, 51));
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/icons8-enrollment-64.png"))); // NOI18N
+        Enrollment_Home.setBackground(new java.awt.Color(255, 204, 51));
+        Enrollment_Home.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/icons8-enrollment-64.png"))); // NOI18N
 
         jPanel1.setBackground(new java.awt.Color(255, 204, 0));
 
         jPanel2.setBackground(new java.awt.Color(102, 102, 102));
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/resizedpng.png"))); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/5779eff1-fd7f-4c35-aad4-8142b9746b44_removalai_preview.png"))); // NOI18N
 
         jLabel3.setFont(new java.awt.Font("Old English Text MT", 1, 20)); // NOI18N
         jLabel3.setText("The Robington Academy");
 
-        jButton8.setBackground(new java.awt.Color(102, 102, 102));
-        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/icons8-log-out-30.png"))); // NOI18N
-        jButton8.setBorder(null);
-        jButton8.addActionListener(this::jButton8ActionPerformed);
+        User_LogOut.setBackground(new java.awt.Color(102, 102, 102));
+        User_LogOut.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/icons8-log-out-30.png"))); // NOI18N
+        User_LogOut.setBorder(null);
+        User_LogOut.addActionListener(this::User_LogOutActionPerformed);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -84,7 +84,7 @@ public class Home extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 21, Short.MAX_VALUE)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(User_LogOut, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -94,7 +94,7 @@ public class Home extends javax.swing.JFrame {
                 .addGap(0, 4, Short.MAX_VALUE))
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(User_LogOut, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -115,15 +115,15 @@ public class Home extends javax.swing.JFrame {
                 .addGap(0, 12, Short.MAX_VALUE))
         );
 
-        jButton5.setBackground(new java.awt.Color(255, 204, 51));
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/icons8-info-64.png"))); // NOI18N
+        StudentInfo_Home.setBackground(new java.awt.Color(255, 204, 51));
+        StudentInfo_Home.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/icons8-info-64.png"))); // NOI18N
 
-        jButton6.setBackground(new java.awt.Color(255, 204, 51));
-        jButton6.setForeground(new java.awt.Color(153, 153, 153));
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/icons8-payment-50.png"))); // NOI18N
+        Payment_Home.setBackground(new java.awt.Color(255, 204, 51));
+        Payment_Home.setForeground(new java.awt.Color(153, 153, 153));
+        Payment_Home.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/icons8-payment-50.png"))); // NOI18N
 
-        jButton7.setBackground(new java.awt.Color(255, 204, 51));
-        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/icons8-application-50.png"))); // NOI18N
+        Application_Home.setBackground(new java.awt.Color(255, 204, 51));
+        Application_Home.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/icons8-application-50.png"))); // NOI18N
 
         jLabel1.setText("Payment");
 
@@ -149,12 +149,12 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(69, 69, 69)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(StudentInfo_Home, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Enrollment_Home, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(40, 40, 40)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(Payment_Home, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Application_Home, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(90, 90, 90)
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -168,16 +168,16 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(36, 36, 36)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(StudentInfo_Home, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Application_Home, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(2, 2, 2)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(jLabel6))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Payment_Home, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Enrollment_Home, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
@@ -188,9 +188,9 @@ public class Home extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+    private void User_LogOutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_User_LogOutActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton8ActionPerformed
+    }//GEN-LAST:event_User_LogOutActionPerformed
 
     /**
      * @param args the command line arguments
@@ -218,11 +218,11 @@ public class Home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
+    private javax.swing.JButton Application_Home;
+    private javax.swing.JButton Enrollment_Home;
+    private javax.swing.JButton Payment_Home;
+    private javax.swing.JButton StudentInfo_Home;
+    private javax.swing.JButton User_LogOut;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

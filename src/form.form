@@ -76,19 +76,19 @@
                                   <EmptySpace min="-2" pref="308" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jLabel14" alignment="0" min="-2" pref="67" max="-2" attributes="0"/>
-                                      <Component id="jLabel6" alignment="0" min="-2" pref="108" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="jLabel6" alignment="0" pref="108" max="32767" attributes="0"/>
                                       <Component id="jLabel21" alignment="0" min="-2" pref="67" max="-2" attributes="0"/>
-                                      <Component id="jLabel22" alignment="0" min="-2" pref="67" max="-2" attributes="0"/>
+                                      <Component id="jLabel14" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="jLabel22" alignment="0" min="-2" pref="97" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="1" attributes="0">
-                                      <Component id="jTextField16" max="32767" attributes="0"/>
-                                      <Component id="jTextField15" max="32767" attributes="0"/>
-                                      <Component id="jTextField4" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="jTextField5" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="jTextField10" alignment="1" max="32767" attributes="0"/>
+                                      <Component id="StudentAddress_Address_StudetInfo" max="32767" attributes="0"/>
+                                      <Component id="Country_Address_StudetInfo" max="32767" attributes="0"/>
+                                      <Component id="Barangay_Address_StudetInfo" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="HouseNumber_Address_StudetInfo" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="CityMunicipality_Address_StudetInfo" alignment="1" max="32767" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
                               </Group>
@@ -101,25 +101,25 @@
                                   <EmptySpace min="-2" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
-                                          <Component id="jTextField3" min="-2" pref="168" max="-2" attributes="0"/>
+                                          <Component id="FirstName_Student_StudentInfo" min="-2" pref="168" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jTextField11" min="-2" pref="168" max="-2" attributes="0"/>
+                                          <Component id="MiddleName_Student_StudentInfo" min="-2" pref="168" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jTextField6" min="-2" pref="168" max="-2" attributes="0"/>
+                                          <Component id="LastName_Student_StudentInfo" min="-2" pref="168" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
-                                          <Component id="jTextField12" min="-2" pref="144" max="-2" attributes="0"/>
+                                          <Component id="Bday_Student_StudentInfo" min="-2" pref="144" max="-2" attributes="0"/>
                                           <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                                           <Component id="jLabel18" min="-2" pref="63" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jComboBox4" min="-2" pref="99" max="-2" attributes="0"/>
+                                          <Component id="Gender_Student_StudentInfo" min="-2" pref="99" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
-                                          <Component id="jTextField13" min="-2" pref="174" max="-2" attributes="0"/>
+                                          <Component id="Contact_Student_StudentInfo" min="-2" pref="174" max="-2" attributes="0"/>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                           <Component id="jLabel20" min="-2" pref="93" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jTextField14" min="-2" pref="231" max="-2" attributes="0"/>
+                                          <Component id="Email_Student_StudentInfo" min="-2" pref="231" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -130,11 +130,11 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="jLabel27" min="-2" pref="166" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                                  <Component id="jTextField17" min="-2" pref="134" max="-2" attributes="0"/>
+                                  <Component id="FirstName_Guardian_StudentInfo" min="-2" pref="134" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="jTextField18" min="-2" pref="131" max="-2" attributes="0"/>
+                                  <Component id="MiddleName_Guardian_StudentInfo" min="-2" pref="131" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jTextField22" min="-2" pref="132" max="-2" attributes="0"/>
+                                  <Component id="Last_Guardian_StudentInfo" min="-2" pref="132" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
@@ -144,15 +144,15 @@
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-                                          <Component id="jTextField23" min="-2" pref="144" max="-2" attributes="0"/>
+                                          <Component id="Relation_StudentInfo" min="-2" pref="144" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
-                                          <Component id="jTextField20" min="-2" pref="174" max="-2" attributes="0"/>
+                                          <Component id="Contact_Guardian_StudentInfo" min="-2" pref="174" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="jTextField21" min="-2" pref="231" max="-2" attributes="0"/>
+                                          <Component id="Email_Guardian_StudentInfo" min="-2" pref="231" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="jLabel24" min="-2" pref="93" max="-2" attributes="0"/>
@@ -177,7 +177,7 @@
           </Group>
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+              <Component id="NextButton_StudentInfo" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -192,16 +192,16 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jTextField3" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField11" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField6" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="FirstName_Student_StudentInfo" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="MiddleName_Student_StudentInfo" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="LastName_Student_StudentInfo" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField12" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Bday_Student_StudentInfo" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel18" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jComboBox4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Gender_Student_StudentInfo" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -209,9 +209,9 @@
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel19" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField13" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Contact_Student_StudentInfo" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel20" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField14" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Email_Student_StudentInfo" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="jSeparator1" min="-2" pref="10" max="-2" attributes="0"/>
@@ -222,27 +222,27 @@
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField5" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="HouseNumber_Address_StudetInfo" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Barangay_Address_StudetInfo" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField10" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="CityMunicipality_Address_StudetInfo" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel21" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField15" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Country_Address_StudetInfo" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel22" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField16" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="StudentAddress_Address_StudetInfo" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="jSeparator4" min="-2" pref="10" max="-2" attributes="0"/>
@@ -253,9 +253,9 @@
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel27" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField17" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField18" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField22" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="FirstName_Guardian_StudentInfo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="MiddleName_Guardian_StudentInfo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Last_Guardian_StudentInfo" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -265,12 +265,12 @@
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jTextField23" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField20" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField21" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Relation_StudentInfo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Contact_Guardian_StudentInfo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Email_Guardian_StudentInfo" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="48" max="32767" attributes="0"/>
-              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+              <Component id="NextButton_StudentInfo" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -320,7 +320,7 @@
                           </Group>
                           <Group type="102" attributes="0">
                               <EmptySpace max="32767" attributes="0"/>
-                              <Component id="jButton3" min="-2" max="-2" attributes="0"/>
+                              <Component id="Return_Home_User_StudentInfo" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
@@ -337,7 +337,7 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jButton3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Return_Home_User_StudentInfo" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -356,11 +356,11 @@
             <Component class="javax.swing.JLabel" name="jLabel17">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/Image/resizedpng.png"/>
+                  <Image iconType="3" name="/Image/5779eff1-fd7f-4c35-aad4-8142b9746b44_removalai_preview.png"/>
                 </Property>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton3">
+            <Component class="javax.swing.JButton" name="Return_Home_User_StudentInfo">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="66" green="66" red="66" type="rgb"/>
@@ -387,9 +387,9 @@
         <Property name="text" type="java.lang.String" value="City/Municipality:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField10">
+    <Component class="javax.swing.JTextField" name="CityMunicipality_Address_StudetInfo">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField3">
+    <Component class="javax.swing.JTextField" name="FirstName_Student_StudentInfo">
       <Properties>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
@@ -404,9 +404,9 @@
         <Property name="text" type="java.lang.String" value="Barangay"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField4">
+    <Component class="javax.swing.JTextField" name="Barangay_Address_StudetInfo">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField5">
+    <Component class="javax.swing.JTextField" name="HouseNumber_Address_StudetInfo">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel7">
       <Properties>
@@ -448,7 +448,7 @@
         <Property name="text" type="java.lang.String" value="Student Name:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField6">
+    <Component class="javax.swing.JTextField" name="LastName_Student_StudentInfo">
       <Properties>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
@@ -456,7 +456,7 @@
         <Property name="text" type="java.lang.String" value="Last Name"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField11">
+    <Component class="javax.swing.JTextField" name="MiddleName_Student_StudentInfo">
       <Properties>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
@@ -464,7 +464,7 @@
         <Property name="text" type="java.lang.String" value="Middle Name"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField12">
+    <Component class="javax.swing.JTextField" name="Bday_Student_StudentInfo">
       <Properties>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
@@ -477,7 +477,7 @@
         <Property name="text" type="java.lang.String" value="Gender:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JComboBox" name="jComboBox4">
+    <Component class="javax.swing.JComboBox" name="Gender_Student_StudentInfo">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="3">
@@ -496,7 +496,7 @@
         <Property name="text" type="java.lang.String" value="Contact:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField13">
+    <Component class="javax.swing.JTextField" name="Contact_Student_StudentInfo">
       <Properties>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
@@ -509,7 +509,7 @@
         <Property name="text" type="java.lang.String" value="Email Address:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField14">
+    <Component class="javax.swing.JTextField" name="Email_Student_StudentInfo">
       <Properties>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
@@ -522,21 +522,21 @@
         <Property name="text" type="java.lang.String" value="Country:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField15">
+    <Component class="javax.swing.JTextField" name="Country_Address_StudetInfo">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel22">
       <Properties>
         <Property name="text" type="java.lang.String" value="Student Address:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField16">
+    <Component class="javax.swing.JTextField" name="StudentAddress_Address_StudetInfo">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel24">
       <Properties>
         <Property name="text" type="java.lang.String" value="Contact Number:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField20">
+    <Component class="javax.swing.JTextField" name="Contact_Guardian_StudentInfo">
       <Properties>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
@@ -554,7 +554,7 @@
         <Property name="text" type="java.lang.String" value="Parent/Guaridian Information:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField21">
+    <Component class="javax.swing.JTextField" name="Email_Guardian_StudentInfo">
       <Properties>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
@@ -562,7 +562,7 @@
         <Property name="text" type="java.lang.String" value="example@gmail.com"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField17">
+    <Component class="javax.swing.JTextField" name="FirstName_Guardian_StudentInfo">
       <Properties>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
@@ -570,7 +570,7 @@
         <Property name="text" type="java.lang.String" value="First Name"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField18">
+    <Component class="javax.swing.JTextField" name="MiddleName_Guardian_StudentInfo">
       <Properties>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
@@ -578,10 +578,10 @@
         <Property name="text" type="java.lang.String" value="Middle Name"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField18ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MiddleName_Guardian_StudentInfoActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField22">
+    <Component class="javax.swing.JTextField" name="Last_Guardian_StudentInfo">
       <Properties>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
@@ -594,7 +594,7 @@
         <Property name="text" type="java.lang.String" value="Relation to Student:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField23">
+    <Component class="javax.swing.JTextField" name="Relation_StudentInfo">
       <Properties>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="cc" red="cc" type="rgb"/>
@@ -602,10 +602,10 @@
         <Property name="text" type="java.lang.String" value="Ex. Father/Mother"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField23ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Relation_StudentInfoActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton1">
+    <Component class="javax.swing.JButton" name="NextButton_StudentInfo">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="0" green="cc" red="ff" type="rgb"/>
@@ -613,7 +613,7 @@
         <Property name="text" type="java.lang.String" value="Next"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="NextButton_StudentInfoActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

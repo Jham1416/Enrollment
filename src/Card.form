@@ -84,11 +84,11 @@
                               <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
-                              <Component id="jPasswordField1" min="-2" pref="230" max="-2" attributes="0"/>
+                              <Component id="PinCode_Payment" min="-2" pref="230" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
-                              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                              <Component id="PayCardButton_Payment" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -103,9 +103,9 @@
                       <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                       <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jPasswordField1" min="-2" max="-2" attributes="0"/>
+                      <Component id="PinCode_Payment" min="-2" max="-2" attributes="0"/>
                       <EmptySpace pref="46" max="32767" attributes="0"/>
-                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                      <Component id="PayCardButton_Payment" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -123,7 +123,7 @@
                 <Property name="text" type="java.lang.String" value="Bank"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JPasswordField" name="jPasswordField1">
+            <Component class="javax.swing.JPasswordField" name="PinCode_Payment">
               <Properties>
                 <Property name="text" type="java.lang.String" value="jPasswordField1"/>
               </Properties>
@@ -133,12 +133,12 @@
                 <Property name="text" type="java.lang.String" value="Enter Pin Code:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton1">
+            <Component class="javax.swing.JButton" name="PayCardButton_Payment">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Pay"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="PayCardButton_PaymentActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>

@@ -69,7 +69,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
-                      <Component id="jButton1" min="-2" pref="180" max="-2" attributes="0"/>
+                      <Component id="PaycashButton_Payment" min="-2" pref="180" max="-2" attributes="0"/>
                       <EmptySpace pref="15" max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -78,14 +78,14 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
-                      <Component id="jButton1" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="PaycashButton_Payment" min="-2" pref="45" max="-2" attributes="0"/>
                       <EmptySpace pref="32" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JButton" name="jButton1">
+            <Component class="javax.swing.JButton" name="PaycashButton_Payment">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="18" style="1"/>

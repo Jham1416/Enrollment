@@ -58,13 +58,13 @@
                   <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jButton5" min="-2" pref="110" max="-2" attributes="0"/>
-                          <Component id="jButton3" min="-2" pref="110" max="-2" attributes="0"/>
+                          <Component id="StudentInfo_Home" min="-2" pref="110" max="-2" attributes="0"/>
+                          <Component id="Enrollment_Home" min="-2" pref="110" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jButton6" min="-2" pref="110" max="-2" attributes="0"/>
-                          <Component id="jButton7" min="-2" pref="110" max="-2" attributes="0"/>
+                          <Component id="Payment_Home" min="-2" pref="110" max="-2" attributes="0"/>
+                          <Component id="Application_Home" min="-2" pref="110" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
@@ -84,8 +84,8 @@
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton5" alignment="3" min="-2" pref="90" max="-2" attributes="0"/>
-                  <Component id="jButton7" alignment="3" min="-2" pref="90" max="-2" attributes="0"/>
+                  <Component id="StudentInfo_Home" alignment="3" min="-2" pref="90" max="-2" attributes="0"/>
+                  <Component id="Application_Home" alignment="3" min="-2" pref="90" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -94,8 +94,8 @@
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton6" alignment="0" min="-2" pref="90" max="-2" attributes="0"/>
-                  <Component id="jButton3" alignment="3" min="-2" pref="90" max="-2" attributes="0"/>
+                  <Component id="Payment_Home" alignment="0" min="-2" pref="90" max="-2" attributes="0"/>
+                  <Component id="Enrollment_Home" alignment="3" min="-2" pref="90" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -108,7 +108,7 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JButton" name="jButton3">
+    <Component class="javax.swing.JButton" name="Enrollment_Home">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="33" green="cc" red="ff" type="rgb"/>
@@ -161,7 +161,7 @@
                       <EmptySpace pref="21" max="32767" attributes="0"/>
                       <Component id="jLabel3" min="-2" pref="208" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jButton8" min="-2" pref="26" max="-2" attributes="0"/>
+                      <Component id="User_LogOut" min="-2" pref="26" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -174,7 +174,7 @@
                   </Group>
                   <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton8" min="-2" pref="25" max="-2" attributes="0"/>
+                      <Component id="User_LogOut" min="-2" pref="25" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
@@ -189,7 +189,7 @@
             <Component class="javax.swing.JLabel" name="jLabel7">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/Image/resizedpng.png"/>
+                  <Image iconType="3" name="/Image/5779eff1-fd7f-4c35-aad4-8142b9746b44_removalai_preview.png"/>
                 </Property>
               </Properties>
             </Component>
@@ -201,7 +201,7 @@
                 <Property name="text" type="java.lang.String" value="The Robington Academy"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton8">
+            <Component class="javax.swing.JButton" name="User_LogOut">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="66" green="66" red="66" type="rgb"/>
@@ -214,14 +214,14 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton8ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="User_LogOutActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>
         </Container>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JButton" name="jButton5">
+    <Component class="javax.swing.JButton" name="StudentInfo_Home">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="33" green="cc" red="ff" type="rgb"/>
@@ -236,7 +236,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton6">
+    <Component class="javax.swing.JButton" name="Payment_Home">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="33" green="cc" red="ff" type="rgb"/>
@@ -254,7 +254,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton7">
+    <Component class="javax.swing.JButton" name="Application_Home">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="33" green="cc" red="ff" type="rgb"/>

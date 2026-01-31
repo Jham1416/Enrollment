@@ -27,33 +27,33 @@ public class AdminStaff extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton5 = new javax.swing.JButton();
+        Admin_Edit_Students = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jButton8 = new javax.swing.JButton();
+        Admin_LogOut = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton5.setBackground(new java.awt.Color(255, 204, 0));
-        jButton5.setFont(new java.awt.Font("Segoe UI Historic", 1, 18)); // NOI18N
-        jButton5.setText("Edit/Add/Remove Students");
-        jButton5.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        Admin_Edit_Students.setBackground(new java.awt.Color(255, 204, 0));
+        Admin_Edit_Students.setFont(new java.awt.Font("Segoe UI Historic", 1, 18)); // NOI18N
+        Admin_Edit_Students.setText("Edit/Add/Remove Students");
+        Admin_Edit_Students.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         jPanel1.setBackground(new java.awt.Color(255, 204, 0));
 
         jPanel2.setBackground(new java.awt.Color(102, 102, 102));
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/resizedpng.png"))); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/5779eff1-fd7f-4c35-aad4-8142b9746b44_removalai_preview.png"))); // NOI18N
 
         jLabel3.setFont(new java.awt.Font("Old English Text MT", 1, 20)); // NOI18N
         jLabel3.setText("The Robington Academy");
 
-        jButton8.setBackground(new java.awt.Color(102, 102, 102));
-        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/icons8-log-out-30.png"))); // NOI18N
-        jButton8.setBorder(null);
-        jButton8.addActionListener(this::jButton8ActionPerformed);
+        Admin_LogOut.setBackground(new java.awt.Color(102, 102, 102));
+        Admin_LogOut.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/icons8-log-out-30.png"))); // NOI18N
+        Admin_LogOut.setBorder(null);
+        Admin_LogOut.addActionListener(this::Admin_LogOutActionPerformed);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -64,7 +64,7 @@ public class AdminStaff extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Admin_LogOut, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -74,7 +74,7 @@ public class AdminStaff extends javax.swing.JFrame {
                 .addGap(0, 4, Short.MAX_VALUE))
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Admin_LogOut, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -102,7 +102,7 @@ public class AdminStaff extends javax.swing.JFrame {
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addGap(56, 56, 56)
-                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Admin_Edit_Students, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -110,16 +110,16 @@ public class AdminStaff extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(81, 81, 81)
-                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Admin_Edit_Students, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(136, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+    private void Admin_LogOutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Admin_LogOutActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton8ActionPerformed
+    }//GEN-LAST:event_Admin_LogOutActionPerformed
 
     /**
      * @param args the command line arguments
@@ -147,8 +147,8 @@ public class AdminStaff extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton8;
+    private javax.swing.JButton Admin_Edit_Students;
+    private javax.swing.JButton Admin_LogOut;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
