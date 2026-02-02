@@ -7,6 +7,7 @@
  *
  * @author admin
  */
+import javax.swing.JOptionPane;
 public class Home extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Home.class.getName());
@@ -235,6 +236,17 @@ public class Home extends javax.swing.JFrame {
 
     private void User_LogOutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_User_LogOutActionPerformed
         // TODO add your handling code here:
+        int choice = JOptionPane.showConfirmDialog(
+        this,
+        "Are you sure you want to logout?",
+        "Logout",
+        JOptionPane.YES_NO_OPTION
+);
+
+if (choice == JOptionPane.YES_OPTION) {
+    new log_In().setVisible(true);
+    this.dispose();
+}
     }//GEN-LAST:event_User_LogOutActionPerformed
 
     private void Enrollment_HomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Enrollment_HomeActionPerformed

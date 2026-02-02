@@ -215,7 +215,6 @@ public class log_In extends javax.swing.JFrame {
         Account_Type_logIn.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Admin", "Staff", "User", " " }));
         Account_Type_logIn.addActionListener(this::Account_Type_logInActionPerformed);
 
-        UserName_LogIn.setForeground(new java.awt.Color(204, 204, 204));
         UserName_LogIn.addActionListener(this::UserName_LogInActionPerformed);
 
         LogIn.setText("Log In");
