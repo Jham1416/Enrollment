@@ -7,6 +7,7 @@
  *
  * @author admin
  */
+import javax.swing.JOptionPane;
 public class log_In extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(log_In.class.getName());
@@ -215,7 +216,6 @@ public class log_In extends javax.swing.JFrame {
         Account_Type_logIn.addActionListener(this::Account_Type_logInActionPerformed);
 
         UserName_LogIn.setForeground(new java.awt.Color(204, 204, 204));
-        UserName_LogIn.setText("Username");
         UserName_LogIn.addActionListener(this::UserName_LogInActionPerformed);
 
         LogIn.setText("Log In");
@@ -303,10 +303,28 @@ public class log_In extends javax.swing.JFrame {
 
     private void Register_LogInActionPerformed(java.awt.event.ActionEvent evt) {                                               
         // TODO add your handling code here:
+       new Register2().setVisible(true);
+       this.dispose();
     }                                              
 
     private void LogInActionPerformed(java.awt.event.ActionEvent evt) {                                      
         // TODO add your handling code here:
+    String username = UserName_LogIn.getText();
+    String password = new String(Password_LogIn.getPassword());
+    String accountType = Account_Type_logIn.getSelectedItem().toString();
+
+    for (User user : UserDatabase.users) {
+
+        if (user.getUsername().equals(username)
+            && user.getPassword().equals(password)
+            && user.getAccountType().equals(accountType)) {
+
+            JOptionPane.showMessageDialog(this, "Login Successful!");
+            return;
+        }
+    }
+
+    JOptionPane.showMessageDialog(this, "Invalid login details!");
     }                                     
 
     /**

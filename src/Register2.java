@@ -7,6 +7,7 @@
  *
  * @author admin
  */
+import javax.swing.JOptionPane;
 public class Register2 extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Register2.class.getName());
@@ -36,7 +37,6 @@ public class Register2 extends javax.swing.JFrame {
         jLabel31 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
-        Return_Home_User_Payment = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         Confirm_Passwrod_SignUp = new javax.swing.JPasswordField();
         Password_SignUp = new javax.swing.JPasswordField();
@@ -82,11 +82,6 @@ public class Register2 extends javax.swing.JFrame {
             .addGap(0, 5, Short.MAX_VALUE)
         );
 
-        Return_Home_User_Payment.setBackground(new java.awt.Color(102, 102, 102));
-        Return_Home_User_Payment.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/icons8-menu-30.png"))); // NOI18N
-        Return_Home_User_Payment.setBorder(null);
-        Return_Home_User_Payment.addActionListener(this::Return_Home_User_PaymentActionPerformed);
-
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
@@ -96,15 +91,9 @@ public class Register2 extends javax.swing.JFrame {
                 .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(43, 43, 43)
                 .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 567, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(49, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(Return_Home_User_Payment, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 567, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(49, Short.MAX_VALUE))
             .addComponent(jPanel6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel5Layout.setVerticalGroup(
@@ -115,8 +104,7 @@ public class Register2 extends javax.swing.JFrame {
                         .addContainerGap()
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addComponent(Return_Home_User_Payment, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGap(0, 0, Short.MAX_VALUE)
                                 .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(13, 13, 13))
                             .addComponent(jLabel32, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -250,10 +238,6 @@ public class Register2 extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void Return_Home_User_PaymentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Return_Home_User_PaymentActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Return_Home_User_PaymentActionPerformed
-
     private void Confirm_Passwrod_SignUpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Confirm_Passwrod_SignUpActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_Confirm_Passwrod_SignUpActionPerformed
@@ -279,7 +263,38 @@ public class Register2 extends javax.swing.JFrame {
     }//GEN-LAST:event_Term_and_ServicesActionPerformed
 
     private void Register_SignUpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Register_SignUpActionPerformed
-        // TODO add your handling code here:
+  
+
+    String username = Username_SignUp.getText();
+    String email = Email_SignUp.getText();
+    String password = new String(Password_SignUp.getPassword());
+    String confirmPassword = new String(Confirm_Passwrod_SignUp.getPassword());
+    String accountType = Account_Type_SignUp.getSelectedItem().toString();
+
+    if (username.isEmpty() || email.isEmpty() || password.isEmpty()) {
+        JOptionPane.showMessageDialog(this, "Please fill all fields");
+        return;
+    }
+
+    if (!password.equals(confirmPassword)) {
+        JOptionPane.showMessageDialog(this, "Passwords do not match");
+        return;
+    }
+
+    if (!Term_and_Services.isSelected()) {
+        JOptionPane.showMessageDialog(this, "You must agree to terms");
+        return;
+    }
+
+    User newUser = new User(username, email, password, accountType);
+    UserDatabase.users.add(newUser);
+
+    JOptionPane.showMessageDialog(this, "Registered Successfully!");
+
+    new log_In().setVisible(true);
+    this.dispose();
+
+
     }//GEN-LAST:event_Register_SignUpActionPerformed
 
     /**
@@ -313,7 +328,6 @@ public class Register2 extends javax.swing.JFrame {
     private javax.swing.JTextField Email_SignUp;
     private javax.swing.JPasswordField Password_SignUp;
     private javax.swing.JButton Register_SignUp;
-    private javax.swing.JButton Return_Home_User_Payment;
     private javax.swing.JRadioButton Term_and_Services;
     private javax.swing.JTextField Username_SignUp;
     private javax.swing.JLabel jLabel1;
