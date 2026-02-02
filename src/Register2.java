@@ -271,21 +271,32 @@ public class Register2 extends javax.swing.JFrame {
     String confirmPassword = new String(Confirm_Passwrod_SignUp.getPassword());
     String accountType = Account_Type_SignUp.getSelectedItem().toString();
 
+    // Check if fields are empty
     if (username.isEmpty() || email.isEmpty() || password.isEmpty()) {
         JOptionPane.showMessageDialog(this, "Please fill all fields");
         return;
     }
 
+    // Check if passwords match
     if (!password.equals(confirmPassword)) {
         JOptionPane.showMessageDialog(this, "Passwords do not match");
         return;
     }
 
+    // Check if terms are accepted
     if (!Term_and_Services.isSelected()) {
         JOptionPane.showMessageDialog(this, "You must agree to terms");
         return;
     }
 
+    // Email validation using regex
+    String emailPattern = "^[\\w.-]+@[\\w.-]+\\.[a-zA-Z]{2,}$";
+    if (!email.matches(emailPattern)) {
+        JOptionPane.showMessageDialog(this, "Please enter a valid email address");
+        return;
+    }
+
+    // If everything is fine, add the user
     User newUser = new User(username, email, password, accountType);
     UserDatabase.users.add(newUser);
 
@@ -293,7 +304,6 @@ public class Register2 extends javax.swing.JFrame {
 
     new log_In().setVisible(true);
     this.dispose();
-
 
     }//GEN-LAST:event_Register_SignUpActionPerformed
 
