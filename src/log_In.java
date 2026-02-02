@@ -309,22 +309,31 @@ public class log_In extends javax.swing.JFrame {
 
     private void LogInActionPerformed(java.awt.event.ActionEvent evt) {                                      
         // TODO add your handling code here:
-    String username = UserName_LogIn.getText();
-    String password = new String(Password_LogIn.getPassword());
-    String accountType = Account_Type_logIn.getSelectedItem().toString();
+  String username = UserName_LogIn.getText();
+String password = new String(Password_LogIn.getPassword());
+String accountType = Account_Type_logIn.getSelectedItem().toString();
 
-    for (User user : UserDatabase.users) {
+for (User user : UserDatabase.users) {
 
-        if (user.getUsername().equals(username)
-            && user.getPassword().equals(password)
-            && user.getAccountType().equals(accountType)) {
+    if (user.getUsername().equals(username)
+        && user.getPassword().equals(password)
+        && user.getAccountType().equals(accountType)) {
 
-            JOptionPane.showMessageDialog(this, "Login Successful!");
-            return;
+        JOptionPane.showMessageDialog(this, "Login Successful!");
+
+        if (accountType.equals("User")) {
+            new Home().setVisible(true);
         }
-    }
+        else if (accountType.equals("Staff") || accountType.equals("Admin")) {
+            new editStudents().setVisible(true);
+        }
 
-    JOptionPane.showMessageDialog(this, "Invalid login details!");
+        this.dispose();
+        return;
+    }
+}
+
+JOptionPane.showMessageDialog(this, "Invalid login details!");
     }                                     
 
     /**
