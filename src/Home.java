@@ -244,7 +244,7 @@ public class Home extends javax.swing.JFrame {
 );
 
 if (choice == JOptionPane.YES_OPTION) {
-    new log_In().setVisible(true);
+    new LogIn().setVisible(true);
     this.dispose();
 }
     }//GEN-LAST:event_User_LogOutActionPerformed

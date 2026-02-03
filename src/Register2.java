@@ -47,6 +47,7 @@ public class Register2 extends javax.swing.JFrame {
         Email_SignUp = new javax.swing.JTextField();
         Term_and_Services = new javax.swing.JRadioButton();
         Register_SignUp = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -147,17 +148,21 @@ public class Register2 extends javax.swing.JFrame {
 
         Username_SignUp.addActionListener(this::Username_SignUpActionPerformed);
 
-        Account_Type_SignUp.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Admin", "Staff", "User" }));
+        Account_Type_SignUp.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Admin", "User" }));
         Account_Type_SignUp.addActionListener(this::Account_Type_SignUpActionPerformed);
 
         Email_SignUp.addActionListener(this::Email_SignUpActionPerformed);
 
-        Term_and_Services.setText("I agree to the terms of services");
+        Term_and_Services.setText("I agree to the");
         Term_and_Services.addActionListener(this::Term_and_ServicesActionPerformed);
 
         Register_SignUp.setBackground(new java.awt.Color(255, 204, 0));
         Register_SignUp.setText("Register");
         Register_SignUp.addActionListener(this::Register_SignUpActionPerformed);
+
+        jButton1.setText("Term and Services");
+        jButton1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jButton1.addActionListener(this::jButton1ActionPerformed);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -188,7 +193,9 @@ public class Register2 extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(317, 317, 317)
-                .addComponent(Term_and_Services, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Term_and_Services, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(296, 296, 296)
@@ -229,7 +236,9 @@ public class Register2 extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Confirm_Passwrod_SignUp, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(Term_and_Services)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Term_and_Services)
+                    .addComponent(jButton1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(Register_SignUp)
                 .addContainerGap(103, Short.MAX_VALUE))
@@ -302,10 +311,16 @@ public class Register2 extends javax.swing.JFrame {
 
     JOptionPane.showMessageDialog(this, "Registered Successfully!");
 
-    new log_In().setVisible(true);
+    new LogIn().setVisible(true);
     this.dispose();
 
     }//GEN-LAST:event_Register_SignUpActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        new TermandServices().setVisible(true);
+
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -340,6 +355,7 @@ public class Register2 extends javax.swing.JFrame {
     private javax.swing.JButton Register_SignUp;
     private javax.swing.JRadioButton Term_and_Services;
     private javax.swing.JTextField Username_SignUp;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
