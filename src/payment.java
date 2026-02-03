@@ -406,6 +406,10 @@ public class payment extends javax.swing.JFrame {
 
     private void Return_Home_User_PaymentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Return_Home_User_PaymentActionPerformed
         // TODO add your handling code here:
+         Home homeFrame = new Home(); // create a Home JFrame object
+    homeFrame.setVisible(true);  // show Home screen
+    this.dispose();              // close the current Payment window
+
     }//GEN-LAST:event_Return_Home_User_PaymentActionPerformed
 
     /**

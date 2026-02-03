@@ -69,15 +69,18 @@ public class Home extends javax.swing.JFrame {
         StudentInfo_Home.setBackground(new java.awt.Color(255, 204, 51));
         StudentInfo_Home.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/icons8-info-64.png"))); // NOI18N
         StudentInfo_Home.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        StudentInfo_Home.addActionListener(this::StudentInfo_HomeActionPerformed);
 
         Payment_Home.setBackground(new java.awt.Color(255, 204, 51));
         Payment_Home.setForeground(new java.awt.Color(153, 153, 153));
         Payment_Home.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/icons8-payment-50.png"))); // NOI18N
         Payment_Home.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Payment_Home.addActionListener(this::Payment_HomeActionPerformed);
 
         Application_Home.setBackground(new java.awt.Color(255, 204, 51));
         Application_Home.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/icons8-application-50.png"))); // NOI18N
         Application_Home.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Application_Home.addActionListener(this::Application_HomeActionPerformed);
 
         jLabel1.setText("Payment");
 
@@ -250,8 +253,31 @@ if (choice == JOptionPane.YES_OPTION) {
     }//GEN-LAST:event_User_LogOutActionPerformed
 
     private void Enrollment_HomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Enrollment_HomeActionPerformed
-        // TODO add your handling code here:
+        // TODO add your handling code here:  Enrollment enrollmentFrame = new Enrollment(); // create Enrollment JFrame
+    Enrollment enrollmentFrame = new Enrollment();
+    enrollmentFrame.setVisible(true);
+    this.dispose();
+       
     }//GEN-LAST:event_Enrollment_HomeActionPerformed
+
+    private void StudentInfo_HomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_StudentInfo_HomeActionPerformed
+        // TODO add your handling code here:
+       StudentInfo studentInfoFrame = new StudentInfo();
+    studentInfoFrame.setVisible(true);
+    this.dispose();         
+    }//GEN-LAST:event_StudentInfo_HomeActionPerformed
+
+    private void Application_HomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Application_HomeActionPerformed
+        // TODO add your handling code here:
+        appliction applicationFrame = new appliction();
+applicationFrame.setVisible(true);  
+    }//GEN-LAST:event_Application_HomeActionPerformed
+
+    private void Payment_HomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Payment_HomeActionPerformed
+        // TODO add your handling code here: Payment paymentFrame = new Payment(); // create Payment JFrame
+    payment paymentFrame = new payment();
+paymentFrame.setVisible(true);            
+    }//GEN-LAST:event_Payment_HomeActionPerformed
 
     /**
      * @param args the command line arguments

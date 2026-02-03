@@ -144,6 +144,9 @@
           </Border>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="StudentInfo_HomeActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="Payment_Home">
       <Properties>
@@ -162,6 +165,9 @@
           </Border>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Payment_HomeActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="Application_Home">
       <Properties>
@@ -177,6 +183,9 @@
           </Border>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Application_HomeActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
